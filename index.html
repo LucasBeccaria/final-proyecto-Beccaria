@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripcion" content="¡Bienvenidos a nuestra tienda en línea de moda exclusiva! Descubre el mundo de la elegancia y el estilo en nuestra página de venta de ropa. Sumérgete en una experiencia de compra única donde la calidad, la variedad y las últimas tendencias se combinan para ofrecerte lo mejor en moda.">
+    <title>Clothes shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./assets/logo.ico">
+</head>
+<body>
+
+<header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i>Clothes shop</a>
+
+        <nav class="navbar">
+            <a href="#">Inicio</a>
+            <a href="./pages/shop.html">Tienda</a>
+            <a href="./pages/contact.html">Contacto</a>
+        </nav>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div> 
+            <div id="search-btn" class="fas fa-search"></div> 
+            <div id="cart-btn" class="fas fa-shopping-cart"></div> 
+            <div id="login-btn" class="fas fa-user"></div> 
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" placeholder="Buscar..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="./assets/zapas1.avif" alt="imagen de zapatillas">
+                <div class="content">
+                    <h3>Nike</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">$19.99</span>
+                </div>
+            </div>
+                <div class="box">
+                    <i class="fas fa-times"></i>
+                    <img src="./assets/zapas3.avif" alt="imagen de zapatillas">
+                    <div class="content">
+                        <h3>Nike</h3>
+                        <span class="quantity">1</span>
+                        <span class="multiply">x</span>
+                        <span class="price">$19.99</span>
+                    </div>
+                </div>
+                    <div class="box">
+                        <i class="fas fa-times"></i>
+                        <img src="./assets/zapas2.avif" alt="imagen de zapatillas">
+                        <div class="content">
+                            <h3>Nike</h3>
+                            <span class="quantity">1</span>
+                            <span class="multiply">x</span>
+                            <span class="price">$19.99</span>
+                        </div>
+                    </div>
+                <h3 class="total"> total: <span>56.97</span></h3>
+                <a href="./pages/error404.html" class="btn">Agregar al carito</a>
+        </div>
+
+        <form action="" class="login-form">
+            <h3>login form</h3>
+            <input type="Email" placeholder="email" class="box">
+            <input type="Password" placeholder="Password" class="box">
+            <div class="remerber">
+                <input type="checkbox" name="" id="remerber-me">
+                <label for="remerber-me">remerber me</label>
+            </div>
+            <input type="submit" value="login now" class="btn">
+            <p>Olvide mi Password? <a href="./pages/error404.html">Clik aqui</a></p> 
+            <p>No tienes una cuenta?<a href="./pages/error404.html">Crear Cuenta</a></p> 
+        </form>    
+</header>
+<main>
+    <section class="home">
+        <div class="slides-container">
+
+            <div class="slide active">
+                <div class="content">
+                    <span>Remera</span>
+                    <h3> 50% off</h3>
+                    <a href="./pages/error404.html" class="btn">Comprar</a>
+                </div>
+                <div class="image">
+                    <img src="./assets/remera10.jpeg" alt="imagen de remera">
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="content">
+                    <span>Remera</span>
+                    <h3>50% off</h3>
+                    <a href="./pages/error404.html" class="btn">Comprar</a>
+                </div>
+                <div class="image">
+                    <img src="./assets/remera9.jpeg" alt="imagen de remera">
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="content">
+                    <span>Remera</span>
+                    <h3>50% off</h3>
+                    <a href="./pages/error404.html" class="btn">comprar</a>
+                </div>
+                <div class="image">
+                    <img src="./assets/remera8.jpeg" alt="imagen de remera">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="next-slide" class="fas fa-angle-right" onclick="next()"></div>
+        <div id="prev-slide" class="fas fa-angle-left" onclick="next()"></div>
+    </section>    
+
+    <section>
+        <div class="banner-container">
+
+            <div class="banner">
+                <img src="./assets/buzo1.webp" alt="imagen de buzo">
+                <div class="content">
+                    <span>Buzo</span>
+                    <h3>50% off</h3>
+                    <a href="./pages/error404.html" class="btn">Comprar</a>
+                </div>
+            </div>
+            <div class="banner">
+                <img src="./assets/buzo2.webp" alt="imagen de buzo">
+                <div class="content">
+                    <span>limited sales</span>
+                    <h3>50% off</h3>
+                    <a href="./pages/error404.html" class="btn">Comprar</a>
+                </div>
+            </div>
+            <div class="banner">
+                <img src="./assets/buzo3.webp" alt="imagen de buzo">
+                <div class="content">
+                    <span>limited sales</span>
+                    <h3>50% off</h3>
+                    <a href="./pages/error404.html" class="btn">Comprar</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+<footer class="footer">
+
+        <section class="footer">
+            <div class="box-contariner">
+
+                <div class="box">
+                    <h3>Enlaces rápidos</h3>
+                    <a href="./index.html"><i class="fas fa-arrow-right"></i>Inicio</a>
+                    <a href="./pages/shop.html"><i class="fas fa-arrow-right"></i>Tienda</a>
+                    <a href="./pages/remeras.html"><i class="fas fa-arrow-right"></i>Remeras</a>
+                    <a href="./pages/Zapatillas.html"><i class="fas fa-arrow-right"></i>Zapatillas</a>
+                    <a href="./pages/pantalones.html"><i class="fas fa-arrow-right"></i>Pantalones</a>
+                    <a href="./pages/buzos.html"><i class="fas fa-arrow-right"></i>Buzos</a>
+                    <a href="./pages/contact.html"><i class="fas fa-arrow-right"></i>Contacto</a>
+                </div>
+
+            <div class="box">
+                <h3>Links extras</h3>
+                <a href="./pages/error404.html"><i class="fas fa-arrow-right"></i>My order</a>
+                <a href="./pages/error404.html"><i class="fas fa-arrow-right"></i>Mi favorito</a>
+                <a href="./pages/error404.html"><i class="fas fa-arrow-right"></i>Mi lista de deseos</a>
+                <a href="./pages/error404.html"><i class="fas fa-arrow-right"></i>Mi cuenta</a>
+                <a href="./pages/error404.html"><i class="fas fa-arrow-right"></i>Términos o uso</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="https://www.facebook.com/lucas.becca.3"><i class="fab fa-facebook-f"></i>facebook</a>
+                <a href="https://twitter.com/home"><i class="fab fa-twitter"></i>twitter</a>
+                <a href="https://github.com/dashboard"><i class="fab fa-github"></i>github</a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>Instagram</a>
+            </div>
+
+            <div class="box">
+                <h3>Boletin informativo</h3>
+                <p>Suscríbete para las últimas actualizaciones</p>
+                <form action="">
+                    <input type="email" placeholder="email">
+                    <input type="submit" value="Sigueme" class="btn">
+                </form>
+                <img src="./assets/modopago.jpeg" class="payment" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="credit">creado por Lucas Beccaria | ¡reservados todos los derechos!</section>
+
+</footer>
+
+<script src="./js/script.js"></script>
+
+</body>
+</html>
